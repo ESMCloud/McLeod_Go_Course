@@ -5,8 +5,12 @@ import (
 )
 
 func main() {
-	excercise.First()
-	excercise.TestArray()
-	excercise.TestSlices()
-	excercise.SlicingSlice()
+	// excercise.First()
+	// excercise.TestArray()
+	// excercise.TestSlices()
+	// excercise.SlicingSlice()
+	// excercise.SlicingMake()
+	// excercise.MdimensionalSlice()
+	//excercise.UnderlyingArray()
+	excercise.Mapsex01()
 }

@@ -58,7 +58,70 @@ func SlicingSlice() {
 	x = append(x, y...)
 	fmt.Println(x)
 
-	x = append(x[:2], x[4:]...) // Remove elements from a SLICE
+	// Remove / Deleting element(s) from a SLICE with append. You overwrite part of that slice
+	x = append(x[:2], x[4:]...)
 	fmt.Println(x)
 
+}
+
+//SlicingMake FUNC
+func SlicingMake() {
+	//Creare uno slice con make permette di settare in anticipo la dimensione dell'array sottostante, evitando la creazione / distruzione degli array dinamici.
+
+	x := make([]int, 10, 12)
+	fmt.Println(x)
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
+	x[0] = 42
+	x[9] = 999
+
+	fmt.Println(x)
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
+
+	x = append(x, 3423)
+
+	fmt.Println(x)
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
+
+	x = append(x, 3424)
+
+	fmt.Println(x)
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
+
+	x = append(x, 3425)
+
+	fmt.Println(x)
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
+}
+
+//MdimensionalSlice FUNC
+func MdimensionalSlice() {
+	//Creare uno slice con make permette di settare in anticipo la dimensione dell'array sottostante, evitando la creazione / distruzione degli array dinamici.
+
+	//jb := make([]string, 10) // non e' necessario dichiarare la capacita
+	jb := []string{"James", "Bond", "Choccolate", "Martini"}
+	fmt.Println(jb)
+	mp := []string{"Miss", "Moneypenny", "Strawberry", "Hezelnut"}
+	fmt.Println(mp)
+
+	xp := [][]string{jb, mp} // MULTI DIMENSIONAL SLICE
+	fmt.Println(xp)
+	//TODO, NAVIGATE MD SLICES
+}
+
+//UnderlyingArray FUNC
+func UnderlyingArray() {
+	x := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+	fmt.Println(x)
+
+	y := append(x[:2], x[5:]...) // the underlying array stores the values of the new slice
+
+	//z := append(x, 43, 43, 43, 43, 43, 43, 44) // new underlying array allocated
+	fmt.Println(x) // THE VALUE OF THE UNDERLYING ARRAY (X in this case, is CHANGED TOO!)
+	fmt.Println(y)
+	//fmt.Println(z)
 }
