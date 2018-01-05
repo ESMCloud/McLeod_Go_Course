@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/golang-code/McLeod_Go_Course/03_Ninja03/test"
+	"github.com/golang-code/McLeod_Go_Course/07_Ninja03/test"
 )
 
 func main() {
