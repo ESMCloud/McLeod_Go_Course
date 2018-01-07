@@ -126,6 +126,8 @@ func UnderlyingArray() {
 	//fmt.Println(z)
 }
 
+//I tipi MAP DEVONO ESSERE CREATI!!! Exemple: make(map["key type"]"data type")
+
 //Mapsex01 Func
 func Mapsex01() {
 	m := map[string]int{
