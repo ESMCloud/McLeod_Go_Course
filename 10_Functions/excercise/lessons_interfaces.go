@@ -102,10 +102,38 @@ func AnonFunc1(get int) {
 
 //AssignFuncVar is
 func AssignFuncVar() {
-
+	//Assign a function to a variable
 	x := func() {
-		fmt.Println("My first func expression!")
+		fmt.Println("The first anon func!")
 	} //sintassi per passare valori alla funzione anonima
 	x()
 	fmt.Printf("%T\t, %p,\t", x, x)
+	z := func(v int) {
+		fmt.Printf("The second anon func! %v", v)
+	}
+
+	z(42)
+	fmt.Printf("\n")
+	s1 := ReturnFunc1()
+	fmt.Printf("S1 is the type: %T\n", s1)
+	s1()
+
+	//s2 := ReturnFunc2() //OPPURE PER SEMPLICTIA
+	//fmt.Printf("S2 is the type: %T\n", s2)
+	fmt.Println(ReturnFunc2()())
+}
+
+//ReturnFunc1 is
+func ReturnFunc1() func() {
+	s := func() {
+		fmt.Println("The first anon func!")
+	}
+	return s
+}
+
+//ReturnFunc2 is
+func ReturnFunc2() func() int {
+	return func() int {
+		return 1984
+	}
 }

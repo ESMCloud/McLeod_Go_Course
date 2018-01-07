@@ -22,7 +22,11 @@ func main() {
 	//excercise.Methods()
 	//excercise.Interfaces()
 	//excercise.AnonFunc1(100)
-	excercise.AssignFuncVar()
+	// excercise.AssignFuncVar()
+	//excercise.TestCallBack()
+	//fmt.Println(excercise.Incrementor()())
+	x := excercise.FactorialFunc1(10)
+	fmt.Println(x)
 }
 
 //lesson n 12_4 //DEFERRING A FUNC
