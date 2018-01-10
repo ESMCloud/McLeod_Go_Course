@@ -25,7 +25,7 @@ func CasesSw() {
 	// case (4 == 4):
 	// 	fmt.Println("Also true, does it print?")
 	default:
-		fmt.Println("This is  default")
+		fmt.Println("This is default")
 	}
 }
 
@@ -102,11 +102,10 @@ func SwitchString() {
 }
 
 //PrintBool FUNC
-
 func PrintBool() {
-	fmt.Println(true && true)
+	//fmt.Println(true && true)
 	fmt.Println(true && false)
-	fmt.Println(true || true)
+	//fmt.Println(true || true)
 	fmt.Println(true || false)
 	fmt.Println(!true)
 }

@@ -25,8 +25,9 @@ func main() {
 	// excercise.AssignFuncVar()
 	//excercise.TestCallBack()
 	//fmt.Println(excercise.Incrementor()())
-	x := excercise.FactorialFunc1(10)
-	fmt.Println(x)
+	// x := excercise.FactorialFunc1(10)
+	// fmt.Println(x)
+	excercise.TestNinja04()
 }
 
 //lesson n 12_4 //DEFERRING A FUNC
