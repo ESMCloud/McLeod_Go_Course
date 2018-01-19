@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/golang-code/McLeod_Go_Course/12_Pointers/excercise"
+	"github.com/golang-code/McLeod_Go_Course/14_01_Pointers/excercise"
 )
 
 func main() {

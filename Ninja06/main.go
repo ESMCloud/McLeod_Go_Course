@@ -41,6 +41,9 @@ func main() {
 
 	info(circ)
 	info(squa)
+
+	fmt.Println(anonFunc(12))
+
 }
 
 func foo() int {
@@ -71,4 +74,10 @@ func barVariadic(x []int) int {
 
 func info(s Shape) {
 	fmt.Println(s.Area())
+}
+
+func anonFunc(y int) func() {
+	return func() {
+		y++
+	}(y)
 }
